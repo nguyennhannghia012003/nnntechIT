@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css_login.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+</head>
+<body>
+    
+    <div class="wrapper">
+        <form  class="form-box login" id="form-login" action="">
+            <h1 class="formtitle">Login</h1>
+            <div class="formgroup">
+                <label    class="form__label" for=""> Username:</label>
+                <input class="form__input form__input--size form__input--username" required type="text" >
+               
+            </div>
+            <div class="formgroup">
+                <label  class="form__label"  for=""> Password:</label> 
+                <input  class="form__input form__input--size"  required id="password"  type="password">              
+            </div>
+            <div class="form-check-forgotpw">
+                <p><input type="checkbox" id="checkbox_showPW" onclick="showhidePW()"> Show password.</p>
+                <a  class="form-link form-link--password"  href="">Forgot password?</a> 
+                            
+            </div>
+            <div class="btn">
+                <button type="button" class="btn__submit btn__login">Login</button>
+            </div>            
+            <div class="group--signup" >
+                <span >
+                     Not a member ? <button  class="form-link-signup" id="btn__singuplink" onclick="hidelogin()">sign up now</button> 
+                </span>
+            </div>          
+        </form>
+        <form  class="form-box  signup " id="form-signup"  action="">
+            <h1 class="formtitle">Sign up</h1>
+            <div class="formgroup">               
+                <label    for=""> Username:</label>
+                <input class="form__input form__input--size " required type="text" >
+               
+            </div>
+            <div class="formgroup">
+                <label    for=""> Phone:</label> 
+                <input  class="form__input form__input--size" required  type="text">
+                                
+            </div>
+            <div class="formgroup">
+                <label    for=""> Password:</label> 
+                <input  class="form__input form__input--size" required id="password1"  type="password">         
+            </div>
+            <div class="formgroup">
+                <label    for=""> Confirm Password:</label> 
+                <input  class="form__input form__input--size" required id="password2"  type="password">                             
+            </div>
+            <div class="btn">
+                <button type="button" class="btn__submit btn__signup">Sign up</button>
+            </div>  
+            <div class="form__signup" >
+                <span >
+                     Already have an account? <button class="form-link-login" id="btn__loginlink" onclick='hidesignup()'>login</button>     
+                </span>
+            </div>          
+            <script src="login_js.js"></script>   
+        </form>
+       
+    </div>
+    
+</body>
+</html>
